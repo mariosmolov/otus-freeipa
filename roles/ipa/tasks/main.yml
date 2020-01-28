@@ -1,0 +1,37 @@
+---
+
+- name: EPEL Repo
+  yum:
+    name: epel-release
+    state: present
+  tags:
+    - epel-package
+    - packages
+
+
+- name: install packages
+  yum:
+    name:
+      - mc
+      - vim
+      - ipa-server
+      - ipa-server-dns
+      - ipa-server-trust-ad 
+      - bind 
+      - bind-dyndb-ldap
+    state: present
+  tags:
+    - packages
+
+
+- name: change /etc/hosts
+  replace:
+    path: /etc/hosts
+    regexp: '127.0.0.1.*'
+    replace: '192.168.50.10 ipa.otus.lan ipa'
+
+- name: Установка FreeIPA сервер
+  shell: "ipa-server-install --realm=OTUS.LAN --domain=otus.lan --hostname=ipa.otus.lan \
+                             --ds-password=admin123 --admin-password=otus12345 \
+                             --mkhomedir --ssh-trust-dns --setup-dns --unattended \
+                             --auto-forwarders --auto-reverse --no-host-dns --no-dnssec-validation"

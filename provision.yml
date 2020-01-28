@@ -1,0 +1,13 @@
+---
+- name: ipa server
+  hosts: ipa
+  become: true
+  roles:
+    - role: ipa
+
+- name: ipa client
+  hosts: client
+  become: true
+  roles:
+    - role: client
+
