@@ -50,7 +50,7 @@ Added user "user"
 Password:
 Enter Password again to verify:
 
-[root@ipa ~]# ipa user-mod user --sshpubkey="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5VIFyz4yab977MhDn4V+WjqUpnmZVBWjRcZeITBqO7KIR8pp/5D7+F4j3oSpQTs8ixFW/vVJt8agjwvcVW2vF8fKR2zZkHNmZ9s+wk60oTsHadk3ABMCr7mEzKDl4Uwkn2c3kSmo+1bKSqnGtYf9ZiQauM3HUlV4s11HHsV7Rsa25TcN/IZQnvBAxww8B+VSFZGFo6BefspPJ0kXFuNw3DhmndINFNDMOrG5S4bvUswKVfOPfO9c7RQ80TOpvUg/CMoTLZ+oxTVhyR69IqVkqouTrbw1Fovkr3d7wErVAPqY8chN/Dd0+bmRefZbpKxcExx68ArgJrkAT5sH8BgIv mario
+[root@ipa ~]# ipa user-mod user --sshpubkey="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5VIFyz4yab977MhDn4V+WjqUpnmZVBWjRcZeITBqO7KIR8pp/5D7+F4j3oSpQTs8ixFW/vVJt8agjwvcVW2vF8fKR2zZkHNmZ9s+wk60oTsHadk3ABMCr7mEzKDl4Uwkn2c3kSmo+1bKSqnGtYf9ZiQauM3HUlV4s11HHsV7Rsa25TcN/IZQnvBAxww8B+VSFZGFo6BefspPJ0kXFuNw3DhmndINFNDMOrG5S4bvUswKVfOPfO9c7RQ80TOpvUg/CMoTLZ+oxTVhyR69IqVkqouTrbw1Fovkr3d7wErVAPqY8chN/Dd0+bmRefZbpKxcExx68ArgJrkAT5sH8BgIv mario"
 ```
 И заходим на сервер по ключу
 ```
